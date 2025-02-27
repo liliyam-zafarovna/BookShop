@@ -50,7 +50,15 @@ namespace ConsoleApp6
                             Console.WriteLine(i + " | " + book[i][j]);
                         }
                     }
-                    Console.WriteLine("Qaysi kitob haqida ma'lumotlarni olishini xohlaysiz? Kitob ID raqamini kiriting!");
+                for (int i = 0; i < book.Length; i++)
+                {
+                    for (int j = 0; j < book[i].Length; j++)
+                    {
+
+                        Console.WriteLine(i + " | " + book[i][j]);
+                    }
+                }
+                Console.WriteLine("Qaysi kitob haqida ma'lumotlarni olishini xohlaysiz? Kitob ID raqamini kiriting!");
                     Console.WriteLine("MA'LUMOT O'RNIDA => Bizning BookShop saytimiz sinov muddatida bo'lganligi uchun bizda faqat o'zbek tilida va 10 ta online sotuvga qo'yilgan!");
                     tanla = Convert.ToInt32(Console.ReadLine());
                     Console.Clear();
